@@ -1,0 +1,12 @@
+integrama(0, W), Sol = [('Negativ', [['N', 'U']]),  ('Afirmativ', [['D', 'A']]),  ('Al doilea număr', [['D', 'O', 'I']]),  ('Primii 3 din artă', [['A', 'R', 'T']]),  ('Din care plouă', [['N', 'O', 'R']]),  ('Când nu îmi amintesc', [['U', 'I', 'T']])], trace, add_sol(W, Sol, Res).
+
+integrama(2, W), id_intrebare(W, Q1, 10), id_intrebare(W, Q2, 19), intersectie(W, Q1, I1, Q2, I2).
+
+integrama(2, W), Sol = [('Piure, prăjit, la cuptor', [['C', 'A', 'R', 'T', 'O', 'F']]),  ('A se zvânta', [['U', 'S', 'C', 'A']]),  ('Indivizi', [['I', 'N', 'S', 'I']]),  ('Sora mărului', [['P', 'A', 'R', 'A']]),  ('Alina Voicu', [['A', 'V']]),  ('Fruct al căpșunului', [['C', 'A', 'P', 'S', 'U', 'N', 'A']]),  ('Al patrulea semn astrologic din zodiac', [['R', 'A', 'C']]),  ('Sud-Vest', [['S', 'V']]),  ('Drumuri prin oraș', [['S', 'T', 'R', 'A', 'Z', 'I']]),  ('Fruct cu coaja galbenă, bogat în Magneziu', [['B', 'A', 'N', 'A', 'N', 'A']]),  ('Scâncet', [['O', 'F']]),  ('Reptilă amazoniană', [['B', 'O', 'A']]),  ('Reptile care sâsâie', [['S', 'E', 'R', 'P', 'I']]),  ('Cu Heliu', [['B', 'A', 'L', 'O', 'N']]),  ('de teracotă', [['S', 'O', 'B', 'A']]),  ('Primele litere din alfabet', [['A', 'B']]),  ('ionatan', [['M', 'A', 'R']]),  ('Primele vocale', [['A', 'E']]),  ('Paravan pentru ploaie', [['U', 'M', 'B', 'R', 'E', 'L', 'A']]),  ('Cea mai puțin puternică piesă de șah', [['P', 'I', 'O', 'N']]),  ('Grizzly', [['U', 'R', 'S', 'I']]),  ('Sfârșit de toamnă', [['N', 'A']]),  ('2016', [['A', 'N']])], trace, add_sol(W, Sol, Res).
+
+integrama(2, W), statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]), rezolvare(W, Sol), statistics(walltime, [NewTimeSinceStart | [ExecutionTime]]), write('Execution took '), write(ExecutionTime), write(' ms.'), nl.
+
+integrama(2, W), rezolvare(W, Sol).
+
+integrama(2, W), solutii_posibile(W, Sol), process_possibilities(W, Sol, Sol, Res).
+integrama(2, W), solutii_posibile(W, Sol), trace, process_possibilities(W, Sol, Sol, Res).
